@@ -1,0 +1,65 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.StringTokenizer;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.filecache.DistributedCache;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer.Context;
+
+
+public class Mapping extends Mapper<Text, Text, Text, Text> {
+	
+	private HashMap<String,String> hm = new HashMap<String,String>();
+	//@Override
+/*	protected void setup(Context context) throws IOException,
+			InterruptedException {
+		Configuration conf= context.getConfiguration();
+		FileSystem fs=FileSystem.getLocal( conf);
+		 Path[] dataFile = DistributedCache.getLocalCacheFiles(conf);
+		    // [0] because we added just one file.
+		    String str = "";
+		    BufferedReader cacheReader = new BufferedReader(new InputStreamReader(fs.open(dataFile[0])));
+		    // now one can use BufferedReader's readLine() to read data
+			while ((str = cacheReader.readLine()) != null) {    
+					String[] arr=str.split(",");
+					int year=Integer.parseInt(arr[1]);
+					int month=Integer.parseInt(arr[2]);
+					int date=Integer.parseInt(arr[3]);
+					hm.put(year+""+month+""+date,arr[4]+","+arr[5]+","+arr[6]);
+				}   
+	} */
+	
+
+	public void map(LongWritable ikey, Text ivalue, Context context)
+			throws IOException, InterruptedException {
+
+//		String s1="";
+//		String arr[]=ivalue.toString().split(",");
+//		//System.out.println(ivalue);
+//		if(arr[17].equals("SFO"))
+//		{
+//		int year=Integer.parseInt(arr[0]);
+//		int month=Integer.parseInt(arr[1]);
+//		int date=Integer.parseInt(arr[2]);
+//		//context.write(new Text(year+""+month+""+date),ivalue);
+//		//System.out.println(ivalue);
+//		s1=s1+year+""+month+""+date;
+//		if(hm.containsKey(s1))
+//		{
+		System.out.println(ivalue);
+		context.write(new Text(),new Text(ivalue));
+			//context.write(new Text(),new Text(ivalue+"----"+hm.get(s1)));
+		//}
+		
+		//}
+		
+	}
+
+}

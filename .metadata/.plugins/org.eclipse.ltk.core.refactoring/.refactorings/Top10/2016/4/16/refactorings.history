@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;top10.Top10&apos; to &apos;Top10Mapper&apos;&#x0D;&#x0A;- Original project: &apos;Top10&apos;&#x0D;&#x0A;- Original element: &apos;top10.Top10&apos;&#x0D;&#x0A;- Renamed element: &apos;top10.Top10Mapper&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Top10&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;top10{Top10.java[Top10" matchStrategy="1" name="Top10Mapper" qualified="false" references="true" similarDeclarations="false" stamp="1460533463503" textual="false" version="1.0"/>
+</session>

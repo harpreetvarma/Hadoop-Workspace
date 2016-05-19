@@ -1,0 +1,28 @@
+package us_elections;
+
+import java.io.IOException;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class US_Mapper extends Mapper<LongWritable, Text, Text, LongWritable> {
+
+	public void map(LongWritable ikey, Text ivalue, Context context)
+			throws IOException, InterruptedException {
+
+		String lineArray[]=ivalue.toString().split(",");
+		
+		// lineArray [4] = party 
+		// lineArray [6] = votes
+		try
+		{
+		context.write(new Text(lineArray[4]),Long.parseLong(lineArray[6]));
+		}
+		catch (Exception e)
+		{
+			System.out.print("Exception occured"+e);
+		}
+	}
+
+}

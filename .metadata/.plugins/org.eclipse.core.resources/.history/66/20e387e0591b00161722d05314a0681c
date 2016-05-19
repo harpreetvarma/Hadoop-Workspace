@@ -1,0 +1,15 @@
+package us_elections;
+
+import org.apache.hadoop.io.WritableComparable;
+import org.apache.hadoop.io.WritableComparator;
+
+public class US_State_Grouping extends WritableComparator{
+
+	@Override
+	public int compare(WritableComparable a, WritableComparable b) {
+		// TODO Auto-generated method stub
+		US_ELECTIONS object1 = (US_ELECTIONS)a;
+		return super.compare(a, b);
+	}
+
+}

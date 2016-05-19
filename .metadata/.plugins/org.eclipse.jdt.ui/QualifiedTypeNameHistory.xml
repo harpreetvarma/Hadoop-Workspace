@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.filecache.DistributedCache"/>
+<fullyQualifiedTypeName name="com.sun.jndi.toolkit.url.Uri"/>
+<fullyQualifiedTypeName name="java.net.URI"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.fs.FileSystem"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.filecache.DistributedCache"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.fs.Path"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.conf.Configured"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.util.Tool"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.util.ToolRunner"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.util.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.NullWritable"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.MultipleInputs"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.TextInputFormat"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapred.Partitioner"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.Partitioner"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.WritableComparator"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Long"/>
+<fullyQualifiedTypeName name="org.apache.log4j.BasicConfigurator"/>
+<fullyQualifiedTypeName name="us_elections.US_Mapper"/>
+<fullyQualifiedTypeName name="us_elections.US_Reducer"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.WritableComparable"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.Text"/>
+<fullyQualifiedTypeName name="us_elections.US_State_Grouping"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.LongWritable"/>
+</qualifiedTypeNameHistroy>
