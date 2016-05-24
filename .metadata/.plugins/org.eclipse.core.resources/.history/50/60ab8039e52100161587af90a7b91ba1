@@ -1,0 +1,36 @@
+package q5_top_10_most_viewed_videos;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class Q5_Reducer extends Reducer <Text,Text,Text,Text>{
+
+	private Map<String,Integer> initial = new HashMap<String,Integer>();
+	@Override
+	protected void reduce(Text key, Iterable<Text> values,Context context)
+			throws IOException, InterruptedException {
+		
+		for(Text val:values)
+		{
+			String a[]=val.toString().split(",");
+			initial.put(a[0], Integer.parseInt(a[1]));
+		}
+		
+		Map<String,Integer> orderedMap = sortedValues(initial);
+		
+		}
+	private Map<String, Integer> sortedValues(Map<String, Integer> initial2) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		return null;
+	}
+		
+	}
+
+

@@ -1,0 +1,18 @@
+package pack;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.mapreduce.Job;
+
+
+
+public class Q1_Driver {
+
+	public static void main(String[] args) throws Exception {
+		Job job  = new Job();
+		Configuration conf = job.getConfiguration(); 
+		job.setJarByClass(pack.Q1_Driver.class);
+		job.setMapperClass(pack.Example_Mapper.class);
+	
+	}
+
+}

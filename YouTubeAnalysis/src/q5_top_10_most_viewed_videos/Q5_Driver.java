@@ -21,7 +21,7 @@ public class Q5_Driver {
 		job.setMapperClass(q5_top_10_most_viewed_videos.Q5_Mapper.class);
 		job.setReducerClass(q5_top_10_most_viewed_videos.Q5_Reducer.class);
 		
-		job.setOutputKeyClass(q5_top_10_most_viewed_videos.Q5_Custom.class);
+		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
 		
 		FileInputFormat.setInputPaths(job, new Path("hdfs://localhost:9000/youtube/0.txt"));
