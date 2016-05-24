@@ -1,7 +1,0 @@
-package us_elections;
-
-import org.apache.hadoop.io.WritableComparator;
-
-public class US_State_Grouping extends WritableComparator{
-
-}

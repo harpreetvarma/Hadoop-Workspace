@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;q1_youtube_analysis.Q1_Mapper&apos; to &apos;Q1_Driver&apos;&#x0D;&#x0A;- Original project: &apos;YouTubeAnalysis&apos;&#x0D;&#x0A;- Original element: &apos;q1_youtube_analysis.Q1_Mapper&apos;&#x0D;&#x0A;- Renamed element: &apos;q1_youtube_analysis.Q1_Driver&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Q1_Mapper&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;q1_youtube_analysis{Q1_Mapper.java[Q1_Mapper" matchStrategy="1" name="Q1_Driver" qualified="false" references="true" similarDeclarations="false" stamp="1464021739908" textual="false" version="1.0"/>
+</session>

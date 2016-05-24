@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=trial/src&lt;trial{WordCountMapper.java[WordCountMapper" modifiers="1" timestamp="1457626964658"/>
+<typeInfo handle="=trial/src&lt;trial{WordCountMapper.java[WordCountMapper" modifiers="1" timestamp="1463655268795"/>
 <typeInfo handle="=trial/src&lt;trial{WordCountReducer.java[WordCountReducer" modifiers="1" timestamp="1457682455921"/>
-<typeInfo handle="=MapJoin/src&lt;pack{Mapping.java[Mapping" modifiers="1" timestamp="1460051524593"/>
 <typeInfo handle="=YouTubeAnalysis/src&lt;youtube{YoutubeMapper.java[YoutubeMapper" modifiers="1" timestamp="1462952973619"/>
 <typeInfo handle="=YouTubeAnalysis/src&lt;youtube{YouTubeReducer.java[YouTubeReducer" modifiers="1" timestamp="1460494581693"/>
 <typeInfo handle="=Top10/src&lt;top10{Top10Mapper.java[Top10Mapper" modifiers="1" timestamp="1460537985322"/>
@@ -13,4 +12,13 @@
 <typeInfo handle="=Secondary-Sort-Money/src&lt;money{MoneyReducer.java[MoneyReducer" modifiers="1" timestamp="1460626926933"/>
 <typeInfo handle="=GeoLocationDataset/src&lt;geoLocation{GeoMapper.java[GeoMapper" modifiers="1" timestamp="1460659492235"/>
 <typeInfo handle="=GeoLocationDataset/src&lt;geoLocation{GeoReducer.java[GeoReducer" modifiers="1" timestamp="1460658310126"/>
+<typeInfo handle="=Loan_Dataset/src&lt;loanDatasetPackage{Loan_Mapper.java[Loan_Mapper" modifiers="1" timestamp="1463558037485"/>
+<typeInfo handle="=Loan_Dataset/src&lt;loanDatasetPackage{Loan_Reducer.java[Loan_Reducer" modifiers="1" timestamp="1463557209566"/>
+<typeInfo handle="=NYSE-Day6/src&lt;day6_Q2{Q2Mapper.java[Q2Mapper" modifiers="1" timestamp="1463821293098"/>
+<typeInfo handle="=NYSE-Day6/src&lt;day6_Q2{Q2Reducer.java[Q2Reducer" modifiers="1" timestamp="1463821666122"/>
+<typeInfo handle="=NYSE_Day7/src&lt;day_7_Q1{Q1_Mapper.java[Q1_Mapper" modifiers="1" timestamp="1463844440886"/>
+<typeInfo handle="=NYSE_Day7/src&lt;day_7_Q1{Q1_Reducer.java[Q1_Reducer" modifiers="1" timestamp="1463848325987"/>
+<typeInfo handle="=Map_Side_Join_Try/src&lt;map_join_try{Map_Join_Mapper.java[Map_Join_Mapper" modifiers="1" timestamp="1463998498883"/>
+<typeInfo handle="=Secondary-sort-fights/src&lt;flights{Flight_Mapper.java[Flight_Mapper" modifiers="1" timestamp="1463933872227"/>
+<typeInfo handle="=Secondary-sort-fights/src&lt;flights{Flight_Reducer.java[Flight_Reducer" modifiers="1" timestamp="1463934189081"/>
 </typeInfoHistroy>

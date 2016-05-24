@@ -1,0 +1,20 @@
+package q1_youtube_analysis;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.mapreduce.Job;
+
+
+public class Q1_Driver {
+
+	
+	public static void main (String []args) throws Exception
+	{
+		Job job = new Job();
+		Configuration conf = job.getConfiguration();
+		
+		job.setJarByClass(Q1_Driver.class);
+		job.setMapperClass(Mapper1.class);
+		job.setReducerClass(Reducer1.class);
+		
+	}
+}

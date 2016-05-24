@@ -1,3 +1,18 @@
+
+/**
+ * 
+ * 
+ * Year 0	Month 1	DayofMonth 2	DayOfWeek 3	  DepTime 4	  CRSDepTime 5	ArrTime 6	CRSArrTime 7	UniqueCarrier 8	
+ * FlightNum  9  	TailNum  10	 ActualElapsedTime  11	CRSElapsedTime	  12   AirTime  13	ArrDelay 14	DepDelay 15
+ * Origin 16	Dest  17	Distance 18	 TaxiIn	19   TaxiOut 20   Cancelled  21   CancellationCode 22	Diverted 23
+ * CarrierDelay 24	WeatherDelay 25  NASDelay 26	SecurityDelay 27	LateAircraftDelay 28
+
+ * 
+ * 
+ * 
+ */
+
+
 package pack;
 
 import java.io.File;
@@ -46,20 +61,16 @@ public class Mapping extends Mapper<Object, Text, Text, Text> {
 			throws IOException, InterruptedException {
 		String s1="";
 		String arr[]=ivalue.toString().split(",");
-		//System.out.println(ivalue);
 		if(arr[17].equals("SFO"))
 		{
 		int year=Integer.parseInt(arr[0]);
 		int month=Integer.parseInt(arr[1]);
 		int date=Integer.parseInt(arr[2]);
-		//context.write(new Text(year+""+month+""+date),ivalue);
-		//System.out.println(ivalue);
 		s1=s1+year+""+month+""+date;
 		if(hm.containsKey(s1))
 		{
 		System.out.println(ivalue);
-		//context.write(new Text(),new Text(ivalue));
-			context.write(new Text(),new Text(ivalue+"----"+hm.get(s1)));
+		context.write(ivalue,new Text(hm.get(s1)));
 		}
 		
 		}

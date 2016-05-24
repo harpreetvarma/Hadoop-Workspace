@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;files&apos;&#x0D;&#x0A;- Original project: &apos;MapJoin&apos;&#x0D;&#x0A;- Destination element: &apos;files&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     flight_delays1.csv&#x0D;&#x0A;     sfo_weather.csv" description="Copy files" element1="flight_delays1.csv" element2="sfo_weather.csv" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1463900324727" target="/Map_Side_Join_Try/files" units="0" version="1.0"/>
+</session>

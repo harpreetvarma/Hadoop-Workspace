@@ -1,0 +1,43 @@
+package map_join_try;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.filecache.DistributedCache;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Mapper.Context;
+
+
+public class Map_Join_Mapper extends Mapper<LongWritable, Text, Text, Text> {
+	private HashMap<String, String> hm = new HashMap<String, String>();
+	private BufferedReader br;
+	@Override
+	protected void setup(Context context) throws IOException,
+			InterruptedException {
+		// TODO Auto-generated method stub
+		Configuration conf = context.getConfiguration();
+		FileSystem fs = FileSystem.getLocal(conf);
+		@SuppressWarnings("deprecation")
+		Path[] dataFiles = DistributedCache.getLocalCacheFiles(conf);
+		String str = "";
+		br = new BufferedReader(new InputStreamReader(fs.open(dataFiles[0])));
+		while ((str = br.readLine()) != null) {
+			String arr[] = str.split(",");
+			hm.put(arr[4], arr[5] + " " + arr[6]);
+		}
+	}
+
+	public void map(LongWritable ikey, Text ivalue, Context context)
+			throws IOException, InterruptedException {
+		for (String st : hm.keySet()) {
+			context.write(new Text(st), new Text(hm.get(st)));
+		}
+	}
+}

@@ -1,0 +1,16 @@
+package q2_most_rated_videos_top10;
+
+import org.apache.hadoop.mapreduce.Job;
+
+
+
+public class Q2_Driver {
+
+	public static void main(String[] args) throws Exception
+	{
+		Job job = new Job();
+		
+		Configuration conf = job.getConfiguration();
+	}
+
+}
