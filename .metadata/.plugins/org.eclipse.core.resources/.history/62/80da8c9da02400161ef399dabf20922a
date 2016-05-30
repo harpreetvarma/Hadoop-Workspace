@@ -1,0 +1,56 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.filecache.DistributedCache;
+
+
+public class Mapper1 extends Mapper<LongWritable,Text,Text,Text> {
+
+	private HashMap<String,String> hm = new HashMap<String,String>();
+	@Override
+	protected void map(LongWritable key, Text value,
+			org.apache.hadoop.mapreduce.Mapper.Context context)
+			throws IOException, InterruptedException {
+		
+		
+		String sp[]=value.toString().split(",");
+		
+		
+	}
+
+	@Override
+	protected void setup(org.apache.hadoop.mapreduce.Mapper.Context context)
+			throws IOException, InterruptedException {
+		
+		Configuration conf = context.getConfiguration();
+		FileSystem fs = FileSystem.getLocal(conf);
+		Path p[]=DistributedCache.getLocalCacheFiles(conf);
+		
+		String s="";
+		BufferedReader br = new BufferedReader(new InputStreamReader(fs.open(p[0])));
+		
+		while((s=br.readLine())!=null)
+		{
+			String a[]=s.split(",");
+			if(!a[0].equals("STATION_NAME"))
+			{
+				int year = Integer.parseInt(a[1]);
+				int month = Integer.parseInt(a[2]);
+				int date= Integer.parseInt(a[3]);
+				
+				hm.put(year+""+month+""+date,a[4]+","+a[5]+","+a[6]);
+			}
+		}
+		
+	}
+
+	
+}

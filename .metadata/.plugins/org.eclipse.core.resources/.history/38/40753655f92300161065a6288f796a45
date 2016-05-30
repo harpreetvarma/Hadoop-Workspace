@@ -1,0 +1,19 @@
+import org.apache.hadoop.mapreduce.Job;
+
+
+public class Task_Driver {
+
+	public static void main(String []args) throws Exception
+	{
+		Job job = new Job();
+		
+		job.setJarByClass(Task_Driver.class);
+		job.setMapperClass(Mapper1.class);
+		job.setReducerClass(Reducer1.class);
+		job.setPartitionerClass(part.class);
+	}
+	
+	
+	
+
+}

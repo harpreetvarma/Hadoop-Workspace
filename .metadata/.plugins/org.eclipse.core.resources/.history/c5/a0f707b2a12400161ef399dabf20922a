@@ -1,0 +1,6 @@
+import org.apache.hadoop.io.WritableComparable;
+
+
+public class CustomKey implements WritableComparable<CustomKey>{
+
+}

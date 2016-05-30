@@ -1,0 +1,6 @@
+import org.apache.hadoop.mapreduce.Reducer;
+
+
+public class Reducer1 extends Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
+
+}

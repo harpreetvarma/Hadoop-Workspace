@@ -1,0 +1,36 @@
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.WritableComparable;
+
+
+public class CustomEmp implements WritableComparable<CustomEmp>{
+	
+	public IntWritable sal = new IntWritable();
+	public Text cat = new Text();
+	
+	
+	public void set(String sal,String cat)
+	{
+		this.sal.set(Integer.parseInt(sal));
+	}
+
+	public void readFields(DataInput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void write(DataOutput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int compareTo(CustomEmp arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

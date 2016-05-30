@@ -1,0 +1,17 @@
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.mapreduce.Job;
+
+
+
+
+public class Driver1 {
+
+	public static void main(String[] args) throws Exception {
+		
+		Job job = new Job();
+		Configuration conf = job.getConfiguration();
+		
+		job.setMapperClass(Mapper1.class);
+	}
+
+}

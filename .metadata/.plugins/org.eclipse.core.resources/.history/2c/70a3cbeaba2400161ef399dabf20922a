@@ -1,0 +1,22 @@
+package pack;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+
+public class Driver1 {
+
+	public static void main(String []args)throws Exception
+	{
+		Job job = new Job();
+		Configuration conf = job.getConfiguration();
+		
+		job.setJarByClass(Driver1.class);
+		job.setMapperClass(pack.Mapper1.class);
+		job.setReducerClass(pack.Reducer1.class);
+		
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(Text.class);
+		
+	}
+}

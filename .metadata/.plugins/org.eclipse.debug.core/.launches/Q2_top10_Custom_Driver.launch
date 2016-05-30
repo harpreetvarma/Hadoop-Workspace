@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/YouTubeAnalysis/src/q2_top10_CustomKey/Q2_top10_Custom_Driver.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="q2_top10_CustomKey.Q2_top10_Custom_Driver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="YouTubeAnalysis"/>
+</launchConfiguration>

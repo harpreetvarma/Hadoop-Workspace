@@ -20,6 +20,7 @@ public class Q5_Driver {
 		job.setJarByClass(q5_top_10_most_viewed_videos.Q5_Driver.class);
 		job.setMapperClass(q5_top_10_most_viewed_videos.Q5_Mapper.class);
 		job.setReducerClass(q5_top_10_most_viewed_videos.Q5_Reducer.class);
+		job.setGroupingComparatorClass(q5_top10_CustomKey.Grouping.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);

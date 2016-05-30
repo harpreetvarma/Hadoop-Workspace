@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.HashMap;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+
+public class Mapper1 extends Mapper<LongWritable,Text,Text,Text> {
+
+	private HashMap<String,String> hm = new HashMap<String,String>();
+	@Override
+	protected void map(LongWritable key, Text value,
+			org.apache.hadoop.mapreduce.Mapper.Context context)
+			throws IOException, InterruptedException {
+		// TODO Auto-generated method stub
+		super.map(key, value, context);
+	}
+
+	@Override
+	protected void setup(org.apache.hadoop.mapreduce.Mapper.Context context)
+			throws IOException, InterruptedException {
+		
+		Configuration conf = context.getConfiguration();
+		
+	}
+
+	
+}

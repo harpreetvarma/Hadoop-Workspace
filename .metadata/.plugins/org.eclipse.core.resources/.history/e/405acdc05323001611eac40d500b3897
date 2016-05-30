@@ -1,0 +1,24 @@
+package q2_top10_CustomKey;
+
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+
+
+public class Q2_top10_Custom_Driver {
+
+	public static void main(String []args) throws Exception
+	{
+		Job job = new Job();
+		
+		job.setJarByClass(q2_top10_CustomKey.Q2_top10_Custom_Driver.class);
+		job.setMapperClass(q2_top10_CustomKey.Mapper1.class);
+		job.setReducerClass(q2_top10_CustomKey.Reducer1.class);
+		
+		FileInputFormat.addInputPath(job, new Path(""));
+		FileOutputFormat.setOutputPath(job, new Path(""));
+	}
+
+}

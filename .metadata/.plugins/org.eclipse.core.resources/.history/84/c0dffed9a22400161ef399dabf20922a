@@ -1,0 +1,64 @@
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.WritableComparable;
+
+
+public class CustomKey implements WritableComparable<CustomKey>{
+
+
+	public IntWritable year = new IntWritable();
+	public IntWritable month = new IntWritable();
+	public IntWritable date= new IntWritable();
+	public IntWritable arrDelay = new IntWritable();
+	public void readFields(DataInput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void write(DataOutput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int compareTo(CustomKey arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+	public IntWritable getYear() {
+		return year;
+	}
+
+	public void setYear(IntWritable year) {
+		this.year = year;
+	}
+
+	public IntWritable getMonth() {
+		return month;
+	}
+
+	public void setMonth(IntWritable month) {
+		this.month = month;
+	}
+
+	public IntWritable getDate() {
+		return date;
+	}
+
+	public void setDate(IntWritable date) {
+		this.date = date;
+	}
+
+	public IntWritable getArrDelay() {
+		return arrDelay;
+	}
+
+	public void setArrDelay(IntWritable arrDelay) {
+		this.arrDelay = arrDelay;
+	}
+
+}

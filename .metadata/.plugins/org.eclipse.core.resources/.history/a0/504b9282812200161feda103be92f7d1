@@ -1,0 +1,7 @@
+package q5_top10_CustomKey;
+
+import org.apache.hadoop.io.WritableComparator;
+
+public class Grouping extends WritableComparator{
+
+}

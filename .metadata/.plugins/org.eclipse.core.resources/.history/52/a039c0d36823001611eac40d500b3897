@@ -1,0 +1,7 @@
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+
+
+public class FlightFile extends FileInputFormat<LongWritable, FlightCustom>{
+
+}

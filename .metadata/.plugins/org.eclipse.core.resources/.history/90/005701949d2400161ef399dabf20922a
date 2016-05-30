@@ -1,0 +1,26 @@
+import java.net.URI;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.filecache.DistributedCache;
+
+
+
+
+public class Driver1 {
+
+	public static void main(String []args) throws Exception
+	{
+		Job job = new Job();
+		Configuration conf = job.getConfiguration();
+		
+		job.setJarByClass(Driver1.class);
+		job.setMapperClass(Mapper1.class);
+		job.setReducerClass(Reducer1.class);
+		DistributedCache.addCacheFile(new URI(""), conf);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(Text.class);
+	}
+
+}

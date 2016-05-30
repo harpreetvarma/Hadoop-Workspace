@@ -1,0 +1,28 @@
+package q2_top10_CustomKey;
+
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.WritableComparable;
+
+public class Custom implements WritableComparable<Custom> {
+
+	public LongWritable id = new LongWritable();
+	public void readFields(DataInput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void write(DataOutput arg0) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int compareTo(Custom arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

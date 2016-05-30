@@ -1,0 +1,32 @@
+package map_side_join_practise;
+
+import java.net.URI;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.filecache.DistributedCache;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+
+
+
+//00:57
+public class Join_Driver {
+
+	public static void main(String[] args) throws Exception {
+	
+		Job job = new Job();
+		Configuration conf = job.getConfiguration();
+		DistributedCache.addCacheFile(new URI(""), conf);
+		
+		job.setJarByClass(map_side_join_practise.Join_Driver.class);
+		job.setMapperClass(map_side_join_practise.Mapper1.class);
+		
+		job.setMapOutputKeyClass(Text.class);
+		job.setMapOutputValueClass(Text.class);
+		
+		
+		
+		
+	}
+
+}

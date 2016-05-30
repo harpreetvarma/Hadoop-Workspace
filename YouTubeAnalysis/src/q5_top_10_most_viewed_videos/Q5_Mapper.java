@@ -12,6 +12,10 @@ public class Q5_Mapper extends Mapper<LongWritable,Text,Text,Text>{
 	protected void map(LongWritable key, Text value,Context context)
 			throws IOException, InterruptedException {
 		
+		
+		// line [3] categeory
+		// line [0] id
+		// line [5] views
 		String line[] = value.toString().split("\t");
 		System.out.println(line[0]+" "+line[3]+" "+line[5]);
 		try

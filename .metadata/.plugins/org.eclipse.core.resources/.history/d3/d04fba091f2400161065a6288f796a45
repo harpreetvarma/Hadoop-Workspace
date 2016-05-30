@@ -1,0 +1,6 @@
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+
+
+public class CustomInputFormat extends FileInputFormat<LongWritable,CustomEmp>{
+
+}
