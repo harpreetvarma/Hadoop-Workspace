@@ -1,0 +1,7 @@
+package day6_Q2;
+
+import org.apache.hadoop.io.WritableComparable;
+
+public class CustomKeyClass implements WritableComparable<CustomKeyClass>{
+
+}

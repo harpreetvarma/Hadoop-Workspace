@@ -27,7 +27,6 @@ INDEX VERSION 1.126+C:\Users\Harpreet\Desktop\hadoop-workspace\.metadata\.plugin
 2498739313.index
 1799986622.index
 3931719238.index
-855114958.index
 3831535928.index
 2984642912.index
 2987177733.index
@@ -55,7 +54,6 @@ INDEX VERSION 1.126+C:\Users\Harpreet\Desktop\hadoop-workspace\.metadata\.plugin
 185975254.index
 3043106487.index
 4210645646.index
-2448550846.index
 3254744950.index
 2629117243.index
 1272144093.index
@@ -89,7 +87,6 @@ INDEX VERSION 1.126+C:\Users\Harpreet\Desktop\hadoop-workspace\.metadata\.plugin
 898407760.index
 780637325.index
 82298631.index
-964184508.index
 3103439903.index
 1345055437.index
 1870255979.index
@@ -105,7 +102,6 @@ INDEX VERSION 1.126+C:\Users\Harpreet\Desktop\hadoop-workspace\.metadata\.plugin
 3953289062.index
 294143374.index
 1438865042.index
-3866268364.index
 3748813819.index
 2887895754.index
 3690885681.index
@@ -143,7 +139,6 @@ INDEX VERSION 1.126+C:\Users\Harpreet\Desktop\hadoop-workspace\.metadata\.plugin
 1923297441.index
 4225569537.index
 2106890488.index
-1672387823.index
 2014232589.index
 1614837959.index
 3508189596.index
@@ -157,7 +152,6 @@ INDEX VERSION 1.126+C:\Users\Harpreet\Desktop\hadoop-workspace\.metadata\.plugin
 385885955.index
 4020602821.index
 1233791618.index
-1503057034.index
 2815872927.index
 3746337667.index
 1279107686.index

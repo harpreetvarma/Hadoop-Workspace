@@ -1,0 +1,35 @@
+package map_join_try;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Mapper.Context;
+import org.apache.hadoop.mapreduce.filecache.DistributedCache;
+
+public class Map_Join_Mapper extends Mapper<LongWritable, Text, Text, Text> {
+
+	private HashMap<String, String> hm = new HashMap<String,String>();
+	@Override
+	protected void setup(Context context) throws IOException,
+			InterruptedException {
+		// TODO Auto-generated method stub
+		Configuration conf = context.getConfiguration();
+		FileSystem fs = FileSystem.getLocal(conf);
+		
+		Path [] dataFiles = DistributedCache.getLocalCacheFiles(conf);
+		
+		
+	}
+
+	public void map(LongWritable ikey, Text ivalue, Context context)
+			throws IOException, InterruptedException {
+
+	}
+
+}
