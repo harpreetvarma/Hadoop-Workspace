@@ -1,6 +1,0 @@
-import org.apache.hadoop.io.WritableComparable;
-
-
-public class FlightCustom implements WritableComparable<FlightCustom>{
-
-}

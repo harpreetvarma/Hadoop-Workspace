@@ -1,7 +1,0 @@
-package q2_top10_CustomKey;
-
-import org.apache.hadoop.io.WritableComparable;
-
-public class Custom implements WritableComparable<Custom> {
-
-}

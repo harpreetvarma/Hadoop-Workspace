@@ -1,7 +1,0 @@
-package flights;
-
-import org.apache.hadoop.io.WritableComparable;
-
-public class flight implements WritableComparable<flight>{
-
-}

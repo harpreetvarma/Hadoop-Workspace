@@ -1,7 +1,0 @@
-package q1_youtube_analysis;
-
-import org.apache.hadoop.mapreduce.Mapper;
-
-public class Mapper1 extends Mapper {
-
-}

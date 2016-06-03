@@ -1,9 +1,0 @@
-package pack;
-
-import org.apache.hadoop.io.LongWritable;
-import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class Example_Reducer extends Reducer<Text,LongWritable,Text,Text>{
-
-}

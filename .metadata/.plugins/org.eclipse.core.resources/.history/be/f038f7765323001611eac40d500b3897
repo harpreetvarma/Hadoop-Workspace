@@ -1,5 +1,0 @@
-package q2_top10_CustomKey;
-
-public class Mapper1 extends Mapper {
-
-}

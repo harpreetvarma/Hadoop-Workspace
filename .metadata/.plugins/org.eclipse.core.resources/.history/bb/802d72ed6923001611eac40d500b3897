@@ -1,6 +1,0 @@
-import org.apache.hadoop.mapreduce.Mapper;
-
-
-public class Mapper1 extends Mapper<>{
-
-}

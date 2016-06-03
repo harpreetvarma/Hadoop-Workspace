@@ -1,7 +1,0 @@
-package q1_youtube_analysis;
-
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class Reducer1 extends Reducer {
-
-}

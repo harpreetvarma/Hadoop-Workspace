@@ -1,7 +1,0 @@
-package day_7_Q1;
-
-import org.apache.hadoop.mapreduce.Partitioner;
-
-public class MonthPartitioner extends Partitioner<CustomKey,Text> {
-
-}

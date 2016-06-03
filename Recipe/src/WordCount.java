@@ -57,8 +57,8 @@ public class WordCount {
     job.setReducerClass(IntSumReducer.class);
     job.setOutputKeyClass(Text.class);
     job.setOutputValueClass(IntWritable.class);
-    FileInputFormat.addInputPath(job, new Path(args[0]));
-    FileOutputFormat.setOutputPath(job, new Path(args[1]));
+    FileInputFormat.addInputPath(job, new Path("alice-in-wonderland.txt"));
+    FileOutputFormat.setOutputPath(job, new Path("out"));
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }
 }

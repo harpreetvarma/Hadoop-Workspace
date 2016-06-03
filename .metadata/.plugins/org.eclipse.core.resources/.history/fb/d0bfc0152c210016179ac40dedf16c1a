@@ -1,7 +1,0 @@
-package q5_top_10_most_viewed_videos;
-
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class Q5_Reducer extends Reducer <Q5_Custom,Text,Text,Text>{
-
-}
